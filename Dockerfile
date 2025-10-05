@@ -26,7 +26,7 @@ RUN VERSION=$(git describe --all --exact-match `git rev-parse HEAD` | grep tags 
     -a -installsuffix cgo -o ofc-bootstrap
 
 # Release stage
-FROM alpine:3.11
+FROM alpine:3.18.12
 
 RUN apk --no-cache add ca-certificates git
 
